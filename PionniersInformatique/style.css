@@ -1,0 +1,352 @@
+/* Conteneur des actions */
+.card-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px; 
+    margin-top: 10px;
+}
+
+/* Style de base des boutons */
+.card-actions a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+/* Styles spécifiques */
+.btn-view {
+    background-color: #17a2b8;
+}
+
+.btn-edit {
+    background-color: #ffc107;
+}
+
+.btn-delete {
+    background-color: #dc3545;
+}
+
+/* Effets au survol */
+.btn-view:hover {
+    background-color: #138496;
+    transform: scale(1.1);
+}
+
+.btn-edit:hover {
+    background-color: #e0a800;
+    transform: scale(1.1);
+}
+
+.btn-delete:hover {
+    background-color: #c82333;
+    transform: scale(1.1);
+}
+
+
+/* Style pour l'en-tête détaillé */
+.detail-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap; /* Pour le responsive */
+}
+
+.detail-actions {
+    display: flex;
+    gap: 10px;
+}
+
+/* Boutons - version simplifiée */
+.btn-edit, .btn-delete {
+    padding: 8px 12px;
+    border-radius: 4px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+
+.btn-edit {
+    background-color: #17a2b8;
+}
+
+.btn-delete {
+    background-color: #dc3545;
+}
+
+.btn-edit:hover {
+    background-color: #138496;
+}
+
+.btn-delete:hover {
+    background-color: #c82333;
+}
+
+
+/* Variables de couleur */
+:root {
+    --beige: #f5f5dc;
+    --beige-fonce: #e6e6d2;
+    --bleu: #17a2b8;
+    --bleu-fonce: #138496;
+    --rouge: #dc3545;
+}
+
+/* Styles généraux */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Page d'accueil */
+body.page-accueil {
+    background-color: var(--beige);
+    min-height: 100vh;
+}
+
+/* En-tête */
+.main-header {
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 1rem;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Liens de navigation */
+.nav-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.nav-link:hover {
+    background-color: var(--beige-fonce);
+    color: var(--bleu);
+}
+
+.nav-link.active {
+    background-color: var(--bleu);
+    color: white;
+}
+
+.nav-link i {
+    font-size: 1.1em;
+}
+
+/* Contenu principal */
+.main-content {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* Cartes des pionniers */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.card {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+
+
+
+/* Formulaire */
+.form-ajout {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-ajout input,
+.form-ajout button {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.form-ajout button {
+    background-color: var(--bleu);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.form-ajout button:hover {
+    background-color: var(--bleu-fonce);
+}
+
+
+
+/* Page À propos */
+.about-container {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+.about-container h2 {
+    color: var(--bleu);
+    border-bottom: 2px solid var(--beige-fonce);
+    padding-bottom: 0.5rem;
+}
+
+.about-container ul {
+    padding-left: 1.5rem;
+}
+
+
+
+/* Styles spécifiques au formulaire */
+.form-ajout {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    max-width: 600px;
+    margin: 2rem auto;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #333;
+}
+
+
+.form-group textarea {
+    width: 100%;
+    min-height: 200px; 
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: inherit;
+    resize: vertical; 
+}
+
+.form-group input[type="text"],
+.form-group input[type="date"],
+.form-group input[type="file"] {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.date-input {
+    padding: 0.8rem;
+}
+
+.form-group small {
+    display: block;
+    margin-top: 0.3rem;
+    color: #666;
+    font-size: 0.8rem;
+}
+
+.btn-submit {
+    background-color: #28a745;
+    color: white;
+    padding: 1rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background 0.3s;
+    width: 100%;
+}
+
+.btn-submit:hover {
+    background-color: #218838;
+}
+
+
+.welcome {
+    text-align: center;
+    margin: 2rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.succes {
+    color: green;
+}
+
+.erreur {
+    color: red;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.succes { color: green; }
+.erreur { color: red; }
+.message { padding: 10px; background: #e0f7fa; }
+.notice { font-style: italic; }
