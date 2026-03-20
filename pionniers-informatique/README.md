@@ -16,22 +16,22 @@ Application web de recensement et valorisation des figures marquantes de l'histo
 ## Aperçu
 
 ### Page d'accueil
-![Accueil](screenshots/pageAccueil.png)
+![Accueil](Interfaces/pageAccueil.png)
 
 ### Liste des pionniers
-![Liste](screenshots/liste.png)
+![Liste](Interfaces/liste.png)
 
 ### Ajout d'un pionnier
-![Ajouter](screenshots/Ajouter.png)
+![Ajouter](Interfaces/Ajouter.png)
 
 ### Modifier un pionnier
-![Modifier](screenshots/modifier.png)
+![Modifier](Interfaces/modifier.png)
 
 ### Suppression
-![Supprimer](screenshots/supprimer.png)
+![Supprimer](Interfaces/supprimer.png)
 
 ### À propos
-![À propos](screenshots/Apropos.png)
+![À propos](Interfaces/Apropos.png)
 
 ---
 
