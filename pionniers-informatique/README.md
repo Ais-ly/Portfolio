@@ -1,68 +1,48 @@
-#TodoList App
+# Pionniers de l'Informatique
+Application web de recensement et valorisation des figures marquantes de l'histoire de l'informatique — de Ada Lovelace à Grace Hopper, en passant par Alan Turing et John von Neumann.
 
-Application de gestion de tâches,développée avec React Native dans le cadre de ma licence en informatique.
-
-## Aperçu
-### Connexion
-![Connexion](./Interfaces/interfaceConnexion.png)
-
-### Création de compte
-![Création de compte](./Interfaces/creationCompte.png)
-
-### Accueil
-![Accueil](./Interfaces/accueil.png)
-
-### Mes Listes
-![Mes Listes](./Interfaces/listes.png)
-
-### Création de liste
-![Création de liste](./Interfaces/CreationListe.png)
-
-### Détails d'une liste
-![Détails](./Interfaces/detailsListe.png)
-
-### Déconnexion
-![Déconnexion](./Interfaces/deconnexion.png)
-
-### Suppression de compte
-![Suppression de compte](./Interfaces/supprimercompte.png)
-
+---
 
 ## Fonctionnalités
-- Authentification : connexion, inscription et déconnexion sécurisées.
-- Gestion des listes : création et suppression de listes de tâches.
-- Gestion des tâches : ajout, suppression et changement d'état (fait / à faire).
-- Barre de progression par liste avec pourcentage de complétion.
-- Filtrage des tâches : tout / en cours / résolues.
-- Actions en masse : cocher ou décocher toutes les tâches.
-- Paramètres : suppression définitive du compte.
-- Modales de confirmation pour les actions sensibles.
+- **Catalogue visuel** — navigation intuitive en grille avec photo, nom et nationalité.
+- **Fiches détaillées** — biographie complète, dates de naissance et de décès, nationalité et photo pour chaque pionnier.
+- **Ajout de pionniers** — formulaire complet avec upload de photo et saisie de biographie:
+- **Modification** — édition du nom, de la biographie et remplacement de photo (l'ancienne est automatiquement supprimée du serveur):
+- **Suppression** — suppression complète avec nettoyage automatique des fichiers associés (image + fragment texte):
+- **Persistance hybride** — les données sont stockées en base MySQL, les biographies dans des fichiers fragments `.frg.html` et les photos dans un dossier dédié:
 
+---
+
+## Aperçu
+
+### Page d'accueil
+![Accueil](screenshots/pageAccueil.png)
+
+### Liste des pionniers
+![Liste](screenshots/liste.png)
+
+### Ajout d'un pionnier
+![Ajouter](screenshots/Ajouter.png)
+
+### Modifier un pionnier
+![Modifier](screenshots/modifier.png)
+
+### Suppression
+![Supprimer](screenshots/supprimer.png)
+
+### À propos
+![À propos](screenshots/Apropos.png)
+
+---
 
 ## Technologies
-- React Native + Expo
-- React Navigation (Stack Navigator + Bottom Tab Navigator)
-- GraphQL via fetch natif
-- Context API pour la gestion d'état global (token, username)
-- Authentification par token JWT
+- PHP / PDO
+- MySQL
+- HTML / CSS
+- Font Awesome
 
-## Installation
-```bash
-# Installer les dépendances
-npm install
+---
 
-# Lancer l'application
-npx expo start
-```
+## Configuration
+Copier `configExemple.php` en `config.php` et renseigner les identifiants de connexion à la base de données, puis importer `Pionnier.sql`.
 
-> L'application se connecte à un serveur GraphQL. 
-> L'URL de l'API est configurée dans `Api/apiUrl.js`.
-
-## Structure du projet
-- **App.js**
-- **Navigation/** — Stack et Tab navigators
-- **screen/** — Écrans de l'application
-- **components/** — Composants réutilisables (UI)
-- **Api/** — Appels GraphQL
-- **Context/** — Contextes React (token, username)
-- **assets/** — Images et icônes

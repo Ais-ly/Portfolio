@@ -1,6 +1,6 @@
 <?php
 // Connexion à la DB
-require_once('./config1.php'); 
+require_once('./config.php'); 
 
 $dsn = DB_HOST . DB_NAME . ';charset=utf8';
 
