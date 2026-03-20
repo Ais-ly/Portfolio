@@ -5,11 +5,11 @@ Application de gestion de tâches,développée avec React Native dans le cadre d
 ## Aperçu
 | Connexion | Accueil | Mes Listes |
 |-----------|---------|------------|
-| ![Connexion](./Interface/interfaceConnexion.png) | ![Accueil](./Interface/accueil.png) | ![Listes](./Interface/listes.png) |
+| ![Connexion](./Interfaces/interfaceConnexion.png) | ![Accueil](./Interfaces/accueil.png) | ![Listes](./Interfaces/listes.png) |
 
 | Détails liste | Création de liste | Déconnexion |
 |---------------|-------------------|-------------|
-| ![Détails](./Interface/detailsListe.png) | ![Création](./Interface/CreationListe.png) | ![Déconnexion](./Interface/deconnexion.png) |
+| ![Détails](./Interfaces/detailsListe.png) | ![Création](./Interfacses/CreationListe.png) | ![Déconnexion](./Interfaces/deconnexion.png) |
 
 
 ## Fonctionnalités
