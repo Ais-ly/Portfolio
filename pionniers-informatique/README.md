@@ -3,13 +3,29 @@
 Application de gestion de tâches,développée avec React Native dans le cadre de ma licence en informatique.
 
 ## Aperçu
-| Connexion | Accueil | Mes Listes |
-|-----------|---------|------------|
-| ![Connexion](./Interfaces/interfaceConnexion.png) | ![Accueil](./Interfaces/accueil.png) | ![Listes](./Interfaces/listes.png) |
+### Connexion
+![Connexion](./Interfaces/interfaceConnexion.png)
 
-| Détails liste | Création de liste | Déconnexion |
-|---------------|-------------------|-------------|
-| ![Détails](./Interfaces/detailsListe.png) | ![Création](./Interfacses/CreationListe.png) | ![Déconnexion](./Interfaces/deconnexion.png) |
+### Création de compte
+![Création de compte](./Interfaces/creationCompte.png)
+
+### Accueil
+![Accueil](./Interfaces/accueil.png)
+
+### Mes Listes
+![Mes Listes](./Interfaces/listes.png)
+
+### Création de liste
+![Création de liste](./Interfaces/CreationListe.png)
+
+### Détails d'une liste
+![Détails](./Interfaces/detailsListe.png)
+
+### Déconnexion
+![Déconnexion](./Interfaces/deconnexion.png)
+
+### Suppression de compte
+![Suppression de compte](./Interfaces/supprimercompte.png)
 
 
 ## Fonctionnalités
